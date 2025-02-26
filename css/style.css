@@ -386,94 +386,90 @@ body{
     line-height: 18px;
   }
 }
-html,
-body {
-  margin: 0;
-  -webkit-overflow-scrolling: touch;
-  overflow-scrolling: touch;
-  font-family: "Avenir", sans-serif, Arial;
+/* CUARTA SECCIÓN */
+.content-bg-img{
+  background-color: #B1B1B1;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.nav {
+/* EXPERIENCIA */
+.experiencia h2{
+  font-weight: 400;
+  font-family: "Helvetica", serif;
+  color: #000000;
+  font-size: 32px;
   position: sticky;
-  top: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 75px;
-  background-color: #021c53;
-  color: white;
-  text-align: center;
+  top: 10px;
+  z-index: 10;
 }
-
-.intro {
-  color: white;
-  height: 75vh;
-  width: 100%;
-  text-align: center;
+.experiencia .year{
+  font-family: "Instrument Serif", serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: #000000;
+  padding: 0px;
+  margin: 0px;
 }
-
-.today-header {
-  background: #f4f4f4;
-  height: 75px;
-  width: 100%;
+/* SKILL */
+.experiencia .txt-exp{
+  font-family: "Kosugi", serif;
+  font-size: 22px;
+  font-weight: 400;
   text-align: center;
-  cursor:pointer;
+  color: #000000;
 }
-
-.today-content {
-  height: 800px;
-  text-align: center;
+.experiencia .txt-soft{
+  font-family: "Kosugi", serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #000000;
+}
+.experiencia .title-exp{
+  font-family: "Helvetica", serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #000000;
+  padding: 0px;
+  margin: 0px;
+}
+/* EDUCACION */
+.experiencia .txt-education{
+  font-family: "Instrument Serif", serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+  padding: 0px;
+  margin: 0px;
+}
+.experiencia .title-education{
+  font-family: "Kosugi", serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #000000;
+}
+.experiencia .txt-view{
+  font-family: "Kosugi", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+/* scroll */
+.contend {
+  max-height: 0;
   overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.6s ease;
 }
 
-.tomorrow-header {
-  background: #cecece;
-  height: 75px;
-  width: 100%;
-  text-align: center;
-  cursor:pointer;
+.contend.active {
+  max-height: 400px; /* Ajustar según el contenido */
+  opacity: 1;
 }
-
-.tomorrow-content {
-  height: 800px;
-  text-align: center;
-}
-
-.sticky-today {
-  position: absolute;
-  bottom: 75px;
-}
-.sticky-tomorrow {
-  position: absolute;
-  bottom: 0px;
-}
-
-
-
-
-.footer {
-  left: 0;
-  height: 800px;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
-}
-
-.gray {
-  background-color: #777;
-}
-.blue {
-  background-color: #2c7ad2;
-}
-.purple {
-  background-color: #8d3dae;
-}
-.green {
-  background-color: #28a92b;
+.section-exp {
+  position: relative;
+  padding-top: 50px; /* Espacio para el título fijo */
 }
